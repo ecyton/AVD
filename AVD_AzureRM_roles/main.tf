@@ -28,6 +28,9 @@ resource "azurerm_role_assignment" "AVD_role_assignment" {
   scope                = data.azurerm_subscription.primary.id
   role_definition_name = "start vm on connect"
   principal_id         = data.azuread_service_principal.sth.object_id
+  depends_on = [
+    azurerm_role_definition.avd_custom_role
+  ]
 }
 
 
