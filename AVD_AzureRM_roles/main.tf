@@ -2,8 +2,8 @@ data "azurerm_subscription" "primary" {
 }
 
 data "azuread_service_principal" "sth" {
-  object_id = "ab296599-97e9-4ea7-866c-9f4939a97b27"
-  #application_id = "9cdead84-a844-4324-93f2-b2e6bb768d07"
+  #object_id = "ab296599-97e9-4ea7-866c-9f4939a97b27"
+  application_id = "9cdead84-a844-4324-93f2-b2e6bb768d07"
 }
 
 resource "azurerm_role_definition" "avd_custom_role" {
