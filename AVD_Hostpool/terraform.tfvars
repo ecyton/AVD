@@ -1,5 +1,0 @@
-rg_name = "my1rg"
-deploy_location = "west europe"
-hp_name = "my1hp"
-hp_fr_name = "my1friendlyhp"
-hp_descript = "Some hp"
