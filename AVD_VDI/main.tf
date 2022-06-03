@@ -250,7 +250,7 @@ resource "azurerm_virtual_machine_extension" "avd_script" {
   settings = <<SETTINGS
     {
       "fileUris": [
-      "https://myavddemostor.blob.core.windows.net/my1stcontainer/Add-WVDHostToHostpoolSpringORG4T.ps1?sp=r&st=2022-06-02T16:48:47Z&se=2022-06-03T00:48:47Z&spr=https&sv=2020-08-04&sr=b&sig=WFZgqoRRnePAjA2k8xj0g0wJF1V0Y1yNVYRZ%2BmNTX5Q%3D"
+      "https://avdstorsec.blob.core.windows.net/scriptcont/Add-WVDHostToHostpoolSpringORG4T.ps1?sp=r&st=2022-06-03T16:47:27Z&se=2023-06-04T00:47:27Z&spr=https&sv=2020-08-04&sr=b&sig=upkbyNxTgcDbw4ffhmYizXRBNeZzlQAIXh6Zs468rRA%3D"
       ]
     }
 SETTINGS

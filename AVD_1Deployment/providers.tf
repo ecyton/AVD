@@ -21,5 +21,4 @@ provider "azurerm" {
 
 provider "azuread" {
   # Configuration options
-  alias = "ad_ten"
 }
