@@ -1,0 +1,7 @@
+rg_name = "my1rg"
+deploy_location = "west europe"
+workspace_name = "my1workspace"
+fr_name = "my1friendlyworkspace"
+descript = "Some workspace"
+sa_name = "myavddemostor"
+container_name = "my1stcontainer"
