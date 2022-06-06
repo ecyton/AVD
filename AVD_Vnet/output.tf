@@ -3,5 +3,5 @@ output "vnetnm" {
 }
 
 output "subnetnm" {
-  value = azurerm_virtual_network.myvnet.subnet.name
+  value = azurerm_subnet.mysubnet.name
 }

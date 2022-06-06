@@ -10,6 +10,9 @@ module "myvnet" {
   deploy_location = "west europe"
   vnet_name       = "avdvnet"
   subnet_name     = "avdsubnet"
+  depends_on = [
+    module.rg
+  ]
 }
 
 module "avdstorage" {
@@ -18,6 +21,9 @@ module "avdstorage" {
   deploy_location = "west europe"
   sa_name         = "avdstorsec"
   container_name  = "scriptcont"
+  depends_on = [
+    module.rg
+  ]
 }
 
 module "avdworkspace" {
@@ -27,6 +33,9 @@ module "avdworkspace" {
   workspace_name  = "myavdworkspace"
   fr_name         = "anyworkspace"
   descript        = "moj pierwszy workspejs"
+  depends_on = [
+    module.rg
+  ]
 }
 
 module "ag_hp" {
@@ -57,6 +66,9 @@ module "aadgroups" {
   source          = "../AVD_AAD_Groups"
   rg_name         = "myrg1"
   deploy_location = "west europe"
+  depends_on = [
+    module.rg
+  ]
 }
 
 module "azurermroles" {
@@ -79,7 +91,7 @@ module "AVD_VDI" {
   existingSubnetName          = module.myvnet.subnetnm
   existingWVDAppGroupName     = module.ag_hp.appgrnm
   existingWVDHostPoolName     = module.ag_hp.hpnm
-  existingWVDWorkspaceName    = module.ag_hp.workspacenm
+  existingWVDWorkspaceName    = module.avdworkspace.workspacenm
   drainmode                   = "no"
   createWorkspaceAppGroupAsso = "No"
   SubscriptionId              = "1e5d5a77-5bb8-493e-9a80-87271fc0c024"
