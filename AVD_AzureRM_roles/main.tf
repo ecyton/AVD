@@ -32,8 +32,8 @@ resource "azurerm_role_assignment" "AVD_role_assignment" {
 
 
 
-resource "azurerm_role_definition" "avd_custom_role2" {
-  name        = "deallocate vm on logoff"
+resource "azurerm_role_definition" "custom_byname" {
+  name        = "Deallocate VM on logoff"
   scope       = data.azurerm_subscription.primary.id
   description = "This is a custom role created via Terraform"
 

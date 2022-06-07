@@ -10,7 +10,7 @@ resource "azurerm_virtual_desktop_host_pool" "hostpool" {
   description              = var.hp_descript
   type                     = "Personal"
   maximum_sessions_allowed = 1
-  load_balancer_type       = "DepthFirst"
+  load_balancer_type       = "Persistent"
   personal_desktop_assignment_type = "Automatic"
 }
 
