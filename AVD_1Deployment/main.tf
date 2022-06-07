@@ -99,8 +99,8 @@ module "AVD_VDI" {
     module.ag_hp
   ]
   local_admin_password = "haslo@2022"
-  spn-client-id        = "172ca1c4-6135-4988-8bcb-4db9ef4fd529"
-  spn-client-secret    = "uom8Q~r6GXnyQ9qoRnSA-gf8GABZiPd8KtLU9bP3"
+  spn-client-id        = "1876012d-803e-4c44-a944-78a393ccd9a3"
+  spn-client-secret    = "7748Q~XPNtU.inLL.xGhSDTmEwQC2dWfrFu6Ha9P"
   spn-tenant-id        = "5454a13c-63f1-479a-97f7-2dc768e1b9ca"
   workspaceKey         = ""
   tags_name = {
